@@ -1,0 +1,13 @@
+.publishButton {
+  height: 40px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  background-color: #ff8e1d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
