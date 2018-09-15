@@ -5,7 +5,7 @@ const Email = () => (
     <label className="form__label" htmlFor="email">
       email
     </label>
-    <input className="form__field field--border-light" type="email" name="email" />
+    <input className="form__field field--border-light" type="email" name="email" placeholder="Email" />
   </div>
 );
 

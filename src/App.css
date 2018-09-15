@@ -79,3 +79,7 @@ img {
 .font--small {
   font-size: 14px;
 }
+
+.form--red_star {
+  color: red;
+}

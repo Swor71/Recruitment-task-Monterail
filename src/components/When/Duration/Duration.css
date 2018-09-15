@@ -1,10 +1,10 @@
-.form__reward_field {
+.form__duration_field {
   width: 80px;
   padding: 5px 0 5px 10px;
   border-radius: 3px;
   margin-right: 10px;
 }
 
-.form__reward_field::placeholder {
+.form__duration_field::placeholder {
   color: #d8d8da;
 }
