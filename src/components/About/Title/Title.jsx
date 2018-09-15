@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Title = () => (
+const Title = props => (
   <div className="form--flex ">
     <label className="form__label">
       title
@@ -12,6 +12,7 @@ const Title = () => (
       name="title"
       placeholder="Make it short and clear"
       required={true}
+      onChange={e => props.onTitleChange(e)}
     />
   </div>
 );

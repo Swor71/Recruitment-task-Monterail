@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Description.css';
 
-const Description = () => (
+const Description = props => (
   <div className="form--flex">
     <label className="form__label" htmlFor="description">
       description
@@ -15,10 +15,11 @@ const Description = () => (
         placeholder="Write about your event, be creative"
         maxLength="140"
         required={true}
+        onChange={e => props.onDescriptionChange(e)}
       />
       <div className="field__undertext--flex">
         <span>Max length 140 characters</span>
-        <span>0/140</span>
+        <span>{`${props.letters}/140`}</span>
       </div>
     </div>
   </div>
