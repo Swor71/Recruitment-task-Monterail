@@ -4,7 +4,7 @@ const Title = () => (
   <div className="form--flex ">
     <label className="form__label">
       title
-      <span className="form--red_star"> *</span>
+      <span className="form__star--red"> *</span>
     </label>
     <input
       className="form__field field--border-light"

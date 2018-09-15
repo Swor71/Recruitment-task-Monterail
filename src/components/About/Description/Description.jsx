@@ -6,7 +6,7 @@ const Description = () => (
   <div className="form--flex">
     <label className="form__label" htmlFor="description">
       description
-      <span className="form--red_star"> *</span>
+      <span className="form__star--red"> *</span>
     </label>
     <div>
       <textarea

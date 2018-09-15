@@ -8,6 +8,10 @@ const Category = () => (
     </label>
     <div>
       <select className="form__field field--border-light" name="category" placeholder="Select category" required={true}>
+        <option className="form__select_field--placeholder" value="" default>
+          Select Category
+        </option>
+        <hr />
         {categories.map(category => (
           <option key={category.id}>{category.name}</option>
         ))}

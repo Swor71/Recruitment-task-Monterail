@@ -39,6 +39,7 @@ img {
   background-color: #f7f7f7;
   height: 100vh;
   width: 100%;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .form__label {
@@ -96,10 +97,20 @@ img {
   font-size: 14px;
 }
 
-.form--red_star {
-  color: red;
+.form__star--red {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.pos--absolute {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
 }
 
 .form__divider--margin-sides {
   margin: 0 10px;
+}
+
+.form__select_field--placeholder {
+  background-color: #d8d8da;
 }

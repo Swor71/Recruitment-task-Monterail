@@ -5,7 +5,7 @@ const EventStart = () => (
   <div className="form--flex">
     <label className="form__label" htmlFor="description">
       starts on
-      <span className="form--red_star"> *</span>
+      <span className="form__star--red"> *</span>
     </label>
     <div>
       <input className="form__field--medium field--border-light" type="date" name="date" required={true} />

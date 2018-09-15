@@ -5,7 +5,7 @@ const Responsible = () => (
   <div className="form--flex">
     <label className="form__label" htmlFor="person" type="text">
       responsible
-      <span className="form--red_star"> *</span>
+      <span className="form__star--red"> *</span>
     </label>
     <select className="form__field field--border-light" name="person" required={true}>
       <option className="form__select_field--default" value="" default>
