@@ -11,7 +11,6 @@ const Category = () => (
         <option className="form__select_field--placeholder" value="" default>
           Select Category
         </option>
-        <hr />
         {categories.map(category => (
           <option key={category.id}>{category.name}</option>
         ))}

@@ -112,5 +112,32 @@ img {
 }
 
 .form__select_field--placeholder {
-  background-color: #d8d8da;
+  color: #d8d8da;
+}
+
+.form input:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form input:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
+}
+
+.form textarea:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form textarea:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
+}
+
+.form select:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form select:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
 }
