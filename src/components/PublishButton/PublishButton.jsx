@@ -2,7 +2,7 @@ import React from 'react';
 import './PublishButton.css';
 
 const PublishButton = () => {
-  return <button className="publishButton">publish event</button>;
+  return <input type="submit" name="publishEvent" value="publish event" className="publishButton" />;
 };
 
 export default PublishButton;

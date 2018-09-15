@@ -8,8 +8,11 @@ const Responsible = () => (
       <span className="form--red_star"> *</span>
     </label>
     <select className="form__field field--border-light" name="person" required={true}>
+      <option className="form__select_field--default" value="" default>
+        Select Coordinator
+      </option>
       {employees.map(person => (
-        <option key={person.id}>{`${person.name} ${person.lastname}`}</option>
+        <option key={person.id} value={person.id}>{`${person.name} ${person.lastname}`}</option>
       ))}
     </select>
   </div>

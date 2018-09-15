@@ -6,7 +6,13 @@ const Title = () => (
       title
       <span className="form--red_star"> *</span>
     </label>
-    <input className="form__field field--border-light" type="text" name="title" placeholder="Make it short and clear" />
+    <input
+      className="form__field field--border-light"
+      type="text"
+      name="title"
+      placeholder="Make it short and clear"
+      required={true}
+    />
   </div>
 );
 
