@@ -8,14 +8,9 @@ const EventStart = () => (
       <span className="form--red_star"> *</span>
     </label>
     <div>
-      <input
-        type="date"
-        className="field--border-light"
-        name="description"
-        placeholder="Write about your event, be creative"
-      />
+      <input className="form__field--medium field--border-light" type="date" name="date" />
       <span className="form__divider--margin-sides">at</span>
-      <input type="time" name="time" />
+      <input className="form__field--short field--border-light" type="time" name="time" />
       <label className="form__divider--margin-sides">
         <input type="radio" name="payment" value="free_event" />
         AM

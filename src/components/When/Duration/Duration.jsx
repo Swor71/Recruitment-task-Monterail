@@ -1,5 +1,4 @@
 import React from 'react';
-import './Duration.css';
 
 const Duration = () => (
   <div className="form--flex ">
@@ -7,7 +6,7 @@ const Duration = () => (
       duration
     </label>
     <div className="font--small">
-      <input className="form__duration_field field--border-light" type="number" placeholder="Number" />
+      <input className="form__field--short field--border-light" type="number" placeholder="Number" />
       <span>hour(s)</span>
     </div>
   </div>

@@ -65,6 +65,22 @@ img {
   color: #d8d8da;
 }
 
+.form__field--short {
+  width: 80px;
+  padding: 5px 0 5px 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.form__field--short::placeholder {
+  color: #d8d8da;
+}
+
+.form__field--medium {
+  padding: 5px 0 5px 10px;
+  border-radius: 3px;
+}
+
 .field__undertext--flex {
   display: flex;
   justify-content: space-between;
@@ -82,4 +98,8 @@ img {
 
 .form--red_star {
   color: red;
+}
+
+.form__divider--margin-sides {
+  margin: 0 10px;
 }

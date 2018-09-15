@@ -9,10 +9,12 @@ const Payment = () => (
         <input type="radio" name="payment" value="free_event" />
         Free event
       </label>
-      <label>
+      <label className="form__divider--margin-sides">
         <input type="radio" name="payment" value="paid_event" />
         Paid event
       </label>
+      <input className="form__field--short field--border-light" type="number" placeholder="Fee" />
+      <span>$</span>
     </div>
   </div>
 );
