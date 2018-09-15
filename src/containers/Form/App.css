@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  font-family: 'Lato', sans-serif;
+  background-color: #f7f7f7;
+  height: 100vh;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+  margin: 20px auto;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.form__label {
+  text-transform: uppercase;
+  color: rgba(53, 89, 144, 0.6);
+  font-size: 12px;
+  font-weight: 600;
+  width: 20%;
+  margin-top: 5px;
+}
+
+.form--flex {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form__field {
+  width: 400px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.form__field::placeholder {
+  color: #d8d8da;
+}
+
+.form__field--short {
+  width: 80px;
+  padding: 5px 0 5px 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.form__field--short::placeholder {
+  color: #d8d8da;
+}
+
+.form__field--medium {
+  padding: 5px 0 5px 10px;
+  border-radius: 3px;
+}
+
+.field__undertext--flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #d8d8da;
+}
+
+.field--border-light {
+  border: 1px solid #d8d8da;
+}
+
+.font--small {
+  font-size: 14px;
+}
+
+.form__star--red {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.pos--absolute {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+}
+
+.form__divider--margin-sides {
+  margin: 0 10px;
+}
+
+.form__select_field--placeholder {
+  color: #d8d8da;
+}
+
+.form input:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form input:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
+}
+
+.form textarea:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form textarea:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
+}
+
+.form select:required:focus:valid {
+  border: 1px solid palegreen;
+  outline: none;
+}
+.form select:required:focus:invalid {
+  border: 1px solid salmon;
+  outline: none;
+}

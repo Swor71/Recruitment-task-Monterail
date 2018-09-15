@@ -3,8 +3,9 @@ import About from '../../components/About/About';
 import Coordinator from '../../components/Coordinator/Coordinator';
 import When from '../../components/When/When';
 import PublishButton from '../../components/PublishButton/PublishButton';
+import Navbar from '../../components/Navbar/Navbar';
 
-import './Form.css';
+import './App.css';
 
 class Form extends Component {
   constructor(props) {
@@ -13,12 +14,15 @@ class Form extends Component {
 
   render() {
     return (
-      <form className="form">
-        <About />
-        <Coordinator />
-        <When />
-        <PublishButton />
-      </form>
+      <div className="App">
+        <Navbar />
+        <form className="form">
+          <About />
+          <Coordinator />
+          <When />
+          <PublishButton />
+        </form>
+      </div>
     );
   }
 }
