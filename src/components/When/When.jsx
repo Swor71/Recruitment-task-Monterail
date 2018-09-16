@@ -10,19 +10,16 @@ import { durationChange, dateChange, timeChange, timeOfDayChange } from '../../a
 class When extends Component {
   handleDateChange(e) {
     let date = e.target.value;
-    console.log(date);
     this.props.dispatch(dateChange(date));
   }
 
   handleTimeChange(e) {
     let time = e.target.value;
-    console.log(time);
     this.props.dispatch(timeChange(time));
   }
 
   handleTimeOfDayChange(e) {
     let timeOfDay = e.target.value;
-    console.log(timeOfDay);
     this.props.dispatch(timeOfDayChange(timeOfDay));
   }
 

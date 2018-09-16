@@ -1,0 +1,14 @@
+.message {
+  max-width: 700px;
+  min-height: 100px;
+  background-color: #f0fcf3;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  padding: 15px 30px;
+  border-radius: 3px;
+}
+
+.message__title {
+  padding-bottom: 10px;
+  color: #87ca8b;
+}

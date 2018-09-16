@@ -30,7 +30,7 @@ class About extends Component {
   }
 
   handleCategoryChange(e) {
-    let category = e.target.value;
+    let category = parseInt(e.target.value, 10);
     this.props.dispatch(categoryChange(category));
   }
 
@@ -40,12 +40,12 @@ class About extends Component {
   }
 
   handleFeeChange(e) {
-    let fee = e.target.value;
+    let fee = parseInt(e.target.value, 10);
     this.props.dispatch(feeChange(fee));
   }
 
   handleRewardChange(e) {
-    let reward = e.target.value;
+    let reward = parseInt(e.target.value, 10);
     this.props.dispatch(rewardChange(reward));
   }
 

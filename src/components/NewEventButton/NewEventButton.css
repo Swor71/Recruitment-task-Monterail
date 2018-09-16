@@ -1,0 +1,14 @@
+.new_event_button {
+  height: 40px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #ff8e1d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
