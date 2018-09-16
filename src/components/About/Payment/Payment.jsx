@@ -4,7 +4,7 @@ import './Payment.css';
 const Payment = props => (
   <div className="form--flex">
     <span className="form__label">payment</span>
-    <div className="font--small">
+    <div className="font--small" style={{ lineHeight: '30px' }}>
       <label>
         <input type="radio" name="payment" value="free" onChange={e => props.onPaymentChange(e)} />
         Free event
