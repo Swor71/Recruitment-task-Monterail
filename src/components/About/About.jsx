@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Canvas from '../Canvas/Canvas';
 import Title from './Title/Title';
 import Description from './Description/Description';
@@ -18,7 +18,7 @@ import {
 
 import './About.css';
 
-class About extends React.Component {
+class About extends Component {
   handleTitleChange(e) {
     let title = e.target.value;
     this.props.dispatch(titleChange(title));

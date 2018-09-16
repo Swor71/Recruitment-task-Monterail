@@ -14,7 +14,7 @@ const Responsible = props => (
       onChange={e => props.onCoordinatorIdChange(e)}
     >
       <optgroup label="Me">
-        <option value={props.loggedInID} selected>{`${employees[props.loggedInID].name} ${
+        <option value={props.loggedInID} defaultValue>{`${employees[props.loggedInID].name} ${
           employees[props.loggedInID].lastname
         }`}</option>
       </optgroup>

@@ -8,8 +8,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import './App.css';
 
 class Form extends Component {
-  constructor(props) {
-    super(props);
+  handleOnSubmit(e) {
+    e.preventDefault();
   }
 
   render() {
@@ -20,7 +20,7 @@ class Form extends Component {
           <About />
           <Coordinator />
           <When />
-          <PublishButton />
+          <PublishButton onSubmit={e => this.handleOnSubmit(e)} />
         </form>
       </div>
     );
