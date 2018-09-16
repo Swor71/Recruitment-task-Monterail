@@ -30,11 +30,11 @@ const EventStart = props => {
           onChange={e => props.onTimeChange(e)}
         />
         <label className="form__divider--margin-sides">
-          <input type="radio" name="eventDate" value="am" required={true} onChange={e => props.onTimeOfDayChange(e)} />
+          <input type="radio" name="eventDate" value="AM" required={true} onChange={e => props.onTimeOfDayChange(e)} />
           AM
         </label>
         <label>
-          <input type="radio" name="eventDate" value="pm" required={true} onChange={e => props.onTimeOfDayChange(e)} />
+          <input type="radio" name="eventDate" value="PM" required={true} onChange={e => props.onTimeOfDayChange(e)} />
           PM
         </label>
       </div>

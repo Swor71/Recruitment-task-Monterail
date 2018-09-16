@@ -10,12 +10,14 @@ import NewEventButton from '../../components/NewEventButton/NewEventButton';
 
 import { connect } from 'react-redux';
 import { submitEvent, newEvent } from '../../actions/formActions';
+import moment from 'moment/moment';
 
 import './Form.css';
 
 class Form extends Component {
   handleOnSubmit(e) {
     e.preventDefault();
+
     const {
       description,
       paid_event,
@@ -26,10 +28,12 @@ class Form extends Component {
       duration,
       email,
       id,
-      date,
+      day,
       time,
       timeOfDay
     } = this.props;
+
+    let date = moment(`${day}${time}${timeOfDay}`, ['YYYY-MM-DDTHH:mm A']).format('YYYY-MM-DDTHH:mm');
 
     const output = {
       title,
@@ -38,6 +42,7 @@ class Form extends Component {
       paid_event,
       event_fee,
       reward,
+      date,
       duration,
       coordinator: {
         email,
@@ -91,7 +96,7 @@ const mapStateToProps = state => ({
   id: state.coordinatorReducer.coordinator.id,
 
   duration: state.whenReducer.duration,
-  date: state.whenReducer.date,
+  day: state.whenReducer.day,
   time: state.whenReducer.time,
   timeOfDay: state.whenReducer.timeOfDay,
 

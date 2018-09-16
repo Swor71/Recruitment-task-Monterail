@@ -7,7 +7,7 @@ import {
 
 const initialState = {
   duration: null,
-  date: null,
+  day: null,
   time: null,
   timeOfDay:null
 };
@@ -22,7 +22,7 @@ export default function whenReducer(state = initialState, action) {
     case DATE_CHANGE:
       return {
         ...state, 
-        date: action.payload
+        day: action.payload
       }
     case TIME_CHANGE:
       return {
