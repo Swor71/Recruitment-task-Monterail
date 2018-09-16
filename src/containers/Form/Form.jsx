@@ -13,6 +13,7 @@ import { submitEvent, newEvent } from '../../actions/formActions';
 import moment from 'moment/moment';
 
 import './Form.css';
+import ActiveEvents from '../../components/ActiveEvents/ActiveEvents';
 
 class Form extends Component {
   handleOnSubmit(e) {
@@ -60,7 +61,7 @@ class Form extends Component {
   }
 
   render() {
-    const { submited } = this.props;
+    const { submited, events } = this.props;
 
     return (
       <div className="App">
@@ -77,6 +78,7 @@ class Form extends Component {
           <Fragment>
             <Message />
             <NewEventButton newEvent={() => this.handleNewEvent()} />
+            <ActiveEvents events={events} />
           </Fragment>
         )}
       </div>
@@ -100,7 +102,8 @@ const mapStateToProps = state => ({
   time: state.whenReducer.time,
   timeOfDay: state.whenReducer.timeOfDay,
 
-  submited: state.formReducer.submited
+  submited: state.formReducer.submited,
+  events: state.formReducer.events
 });
 
 export default connect(mapStateToProps)(Form);

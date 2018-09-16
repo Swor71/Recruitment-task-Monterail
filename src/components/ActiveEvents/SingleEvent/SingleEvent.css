@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:not(:first-of-type):hover {
+  background-color: #355990ce;
+  color: #fff;
+}
+
+td:nth-child(odd) {
+  width: 200px;
+}

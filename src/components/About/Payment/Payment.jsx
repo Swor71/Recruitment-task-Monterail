@@ -20,6 +20,7 @@ const Payment = props => (
             type="number"
             placeholder="Fee"
             onChange={e => props.onFeeChange(e)}
+            required={true}
           />
           <span>$</span>
         </span>
