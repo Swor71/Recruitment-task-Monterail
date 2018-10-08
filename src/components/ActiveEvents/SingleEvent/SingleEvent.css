@@ -11,7 +11,7 @@ th {
   padding: 8px;
 }
 
-tr:not(:first-of-type):hover {
+tbody tr:hover {
   background-color: #355990ce;
   color: #fff;
 }
